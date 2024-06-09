@@ -1,0 +1,26 @@
+Basic requirement is to install node.
+>in terminal
+
+1.npm init 
+-to install package.json
+
+2.npm install -D tailwindcss
+-it will install tainwindcss in as dev dependancy.
+-node_modules and package-lock.json files install
+
+3.npx tailwindcss init
+-it will install tainwind.config.js file
+
+4.>open tailwind.config.js file 
+ --> update
+  content: ['./index.html']
+
+5.> open style.css and add
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+6.in terminal generate output.css file as tailindcss
+>npx tailwindcss -i ./style.css -o ./output.css --watch
+
+7.Now link output.css with index.html file
